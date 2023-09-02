@@ -1,0 +1,29 @@
+{
+    "Artist":[
+        {
+            "name":"Sid Sriram",
+            "image1":"https://a10.gaanacdn.com/gn_img/albums/Bp1bAnK029/1bAyLqXjb0/size_l.webp",
+            "image2":"https://a10.gaanacdn.com/gn_pl_img/playlists/a7LWBaz3zX/LWByXoOj3z/size_l_1618596093.webp"
+        },
+        {
+            "name":"Devi Sri Prasad",
+            "image1":"https://a10.gaanacdn.com/gn_pl_img/playlists/MmqK5pEbwR/qK5Lway1bw/size_l_1531373156.webp",
+            "image2":"https://a10.gaanacdn.com/gn_pl_img/playlists/Bp1bAynb02/1bAy6QNAb0/size_l_1618596146.webp"
+        },
+        {
+            "name":"Chinmayi",
+            "image1":"https://a10.gaanacdn.com/gn_img/albums/ZaP37RKDy7/aP37Az1VbD/size_m_1536278436.jpg",
+            "image2":"https://a10.gaanacdn.com/gn_img/artists/z8k3y13rxo/z8k3y4nKrx/size_l_1588574979.webp"
+        },
+        {
+            "name":"Anirudh Ravichander",
+            "image1":"https://a10.gaanacdn.com/gn_pl_img/playlists/YoEWlabzXB/EWlzG4jaKz/size_m_1618596352.jpg",
+            "image2":"https://a10.gaanacdn.com/gn_pl_img/playlists/oAJbDlbnL8/JbDEyMllKn/size_m_1619000085.jpg"
+        },
+        {
+            "name":"Sreerama Chandra",
+            "image1":"https://www.liveclefs.com/wp-content/uploads/2018/08/LiveClefs.jpg",
+            "image2":"https://i.pinimg.com/originals/22/83/65/22836583829f8451ca8cc74e31184257.jpg"
+        }
+    ]
+}

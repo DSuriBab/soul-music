@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat&display=swap");
+
+.App {
+	min-height: 100vh;
+	height: auto;
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+    background-color: beige;
+    /* background-color: black; */
+    /* background-attachment:fixed; */
+    background-position: center;
+}
+
+h1 {
+	font-family: "Fredoka One", cursive;
+	color: #ff7a8a;
+}
+
+pre {
+    color: rgba(129, 244, 116, 0.352);
+	font-size: 24px;
+	/* color: #113a5d; */
+    opacity: 1;
+}
+
+
+hr {
+	margin-top: 20px;
+	width: 60%;
+}
+
+.inp {
+	width: 200px;
+	height: 40px;
+	border: 2px solid #113a5d;
+	margin: 0px 10px;
+	padding-left: 6px;
+	font-size: 22px;
+}
+.search-input{
+    box-shadow: 0 4px 4px;
+    background-color:#0F4C81;
+    color:solid white;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+.input-song{
+    box-shadow: 0 4px 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.btn {
+	width: 90px;
+	height: 40px;
+}
+
+.lyrics{
+    box-shadow: 0 4px 10px;
+    height:300px;
+    margin: auto;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    background-color: black !important;
+    border-radius: 200px;
+    
+}
+@media screen and (min-width:1000px){
+   
+    .lyrics{
+        width:55%;
+    }
+}
+@media screen and (min-width:750px) and (max-width:999px){
+    .lyrics{
+        width:80%;
+    }
+}
+@media screen and  (max-width:750px){
+    pre{
+        font-size: 18px;
+    }
+    .lyrics{
+        width:95%;
+    }
+}
+.lyrics::-webkit-scrollbar {
+    width: 10px;
+    padding:0px;
+}
+
+/* .lyrics::-webkit-scrollbar-thumb {
+    background-color: #e74c3c;
+    border-radius: 10px;
+}
+.lyrics::-webkit-scrollbar-track {
+    background-color: #3ce74d;
+    border-radius: 10px;
+}
+.lyrics::-webkit-scrollbar-track-piece {
+    background-color: rgba(129, 244, 116, 0.6);
+    border-radius: 10px;
+}
+
+.lyrics::-webkit-scrollbar-thumb:hover {
+    background-color: #15a82b;
+}
+.lyrics::-webkit-scrollbar-button{
+    background-color:black;
+    border-radius:50px;
+
+}
+.lyrics::-webkit-scrollbar-button:hover{
+    background-color:indigo;
+    border-radius: 20px;
+    
+} */
+.PrevNext{
+    display:inline-flex;
+
+}
+.radio-audio::-webkit-media-controls-panel {
+    background-color: #72b5efa3;
+    border-radius: 26px;
+  }
+
+.radio-audio:hover, .radio-audio:focus, .radio-audio:active {
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+    border-radius: 26px;
+
+}
+
+.radio-audio {
+    transition: all 0.5s;
+    border-radius: 26px;
+}
+.prev{
+    cursor: pointer;
+}
+.next{
+    cursor: pointer;
+    height:80px;
+    background-color:beige;
+    border:none;
+    margin-top: 15%;
+
+
+}
+.prev{
+    cursor: pointer;
+    height:80px;
+    background-color:beige;
+    border:none;
+    margin-top: 15%;
+
+
+}
+.home{
+    position: absolute;
+    top:10%;
+    left:10%;
+    text-decoration: none !important;
+    font-size: 24px;
+}
+@media screen and (min-width:500px) and (max-width:999px){
+    .home{
+        top:5%;
+        left:2%;
+    }
+}

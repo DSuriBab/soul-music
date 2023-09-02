@@ -1,0 +1,348 @@
+
+  .main-container {
+    padding: 50px;
+    padding-top: 100px;
+    width: 100vw;
+    height: 1200vh;
+    background-color: antiquewhite;
+    background-attachment: fixed;
+  }
+    h1 {
+	font-family: "Fredoka One", cursive;
+	color: #ff7a8a;
+    text-align: center;
+    margin-top: 0;
+}
+  /* Search input */
+  .search-container {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  
+  .search-container input {
+    text-align: center;
+    border-color: blueviolet;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    background-color: antiquewhite;
+    color: rgb(6, 6, 6);
+  }
+  
+  /* Artist images */
+  .Artist-images {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Artist-images img {
+    box-shadow: 0 4px 20px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .audio-block{
+    position:absolute;
+    border-radius: 28px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .audio-block::-webkit-media-controls-panel {
+    background-color: #ffa69e; /* Coral background for control panel */
+    border-radius: 8px;
+  }
+  .audio-block::-webkit-media-controls-panel:hover{
+    background-color:rgb(46, 112, 124);
+  }
+
+
+  .audio-block::-webkit-media-controls-play-button {
+    border-radius: 60%;
+    border: 2px solid #ffa69e;
+    width: 60px; 
+    height: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+  .Artist-songs li {
+    cursor: pointer;
+    text-align: center;
+    height: 40px;
+    font-size: 22px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .artist-lyrics {
+    max-height: 300px; 
+    position: absolute;
+    text-align: center;
+    overflow: auto;
+    border-radius: 10px;
+  }
+  .summary {
+    cursor: pointer;
+    height: 30px;
+    border: 2px;
+    background-color: rgb(34, 101, 34);
+    position: sticky;
+    top:0%;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+
+  
+  /* Songs list */
+  @media screen and (min-width: 1000px) and (max-width:1800px){
+    /* Selected artist image */
+    .second-image {
+        position:absolute;
+        box-shadow: 0 4px 20px;
+        top:500px;
+        width: 400px;
+        height: 400px;
+        float: left;
+        border-radius: 65px;
+    }
+    .Artist-songs {
+        padding:10px;
+        margin-left: 500px;
+        width: calc(100% - 500px - 200px); 
+        max-height: 500px;
+        overflow: auto;
+        overflow-x: hidden;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 5px 10px 20px;
+    
+      }
+      /* Audio block */
+  .audio-block{
+    /* background-color: rgb(58, 17, 17); */
+    top: 100px;
+    width:400px;
+    height: 350px;
+    box-shadow: 5px 10px 20px;
+
+  }
+
+  .movie-image{
+    position: absolute;
+    top:100px;
+    left:85px;
+    width:350px;
+    height:350px;
+    mask-image: url('mgb.png');
+    mask-size:cover;
+   
+  }
+
+  .movie-rotate-image {
+    animation:image-rotation;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    position: absolute;
+    top:120px;
+    left:125px;
+    width:250px;
+    height:250px;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px;
+    
+
+}
+.Artist-songs li {
+    box-shadow: 0 3px 10px;
+    font-size: 23px;
+  }
+  .artist-lyrics {
+    box-shadow: 0 10px 20px;
+    margin-top: 50px;
+    width:calc(100% - 600px);
+    left:525px;
+    right:12.5%;
+  }
+
+  }
+  @media screen and (min-width:650px) and (max-width: 999px){
+    .second-image {
+        box-shadow: 0 4px 20px;
+        width: 250px;
+        height: 250px;
+        float: left;
+        border-radius: 65px;
+    }
+    .Artist-songs {
+        padding:10px;
+        /* background-color: rgba(137, 43, 226, 0.25); */
+        margin-left: 300px;
+        width:calc(100% - 400px);
+        height: 500px;
+        overflow: auto;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px;
+      }
+      /* Audio block */
+      .audio-block{
+        box-shadow: 0 4px 20px;
+        top:650px;
+        width: calc(100% - 80px); 
+      }
+  .movie-image{
+    position:absolute;
+    top:370px;
+    width:250px;
+    height:250px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 20px;
+    
+  }
+    .movie-rotate-image{
+        animation:image-rotation;
+        animation-duration: 30s;
+        animation-timing-function: linear;
+        animation-iteration-count:infinite;
+        position: absolute;
+        top:370px;
+        width:250px;
+        height:250px;
+        border-radius: 50%;
+        box-shadow: 0 4px 20px;
+
+    }
+    .artist-lyrics {
+        top: 750px;
+        left:12.5%;
+        right:12.5%;
+        
+      }
+
+      .Artist-songs li {
+        box-shadow: 0 3px 10px;
+        font-size: 22px;
+        height:35px;
+      }
+  }
+  
+  @keyframes image-rotation{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+  }
+   /* Song list colors */
+   .Artist-songs li:nth-child(4n+0) {
+    background-color: rgba(165, 65, 65, 0.708);
+  }
+  
+  .Artist-songs li:nth-child(4n+1) {
+    background-color: rgba(47, 83, 144, 0.627);
+  }
+  
+  .Artist-songs li:nth-child(4n+2) {
+    background-color: rgba(50, 146, 69, 0.708);
+  }
+  
+  .Artist-songs li:nth-child(4n+3) {
+    background-color: rgba(149, 168, 43, 0.627);
+  }
+  
+  
+  .artist-container {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .artist-name {
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
+  
+  
+  .artist-lyrics::-webkit-scrollbar {
+    width: 0px;
+    padding: 0px;
+  }
+  .Artist-songs::-webkit-scrollbar {
+    width: 0px;
+    padding: 0px;
+  }
+  
+  /* Lyrics container */
+  
+
+  .artist-lyrics pre {
+    color: black;
+    font-size: 24px;
+    text-shadow: 2px 1px 1px rgb(47, 44, 45);
+  }
+  
+
+.artist-to-home{
+    position: absolute;
+    top:5%;
+    left:10%;
+    text-decoration: none !important;
+}
+
+@media screen and (max-width:650px) {
+    .Artist-songs{
+        position: absolute;
+        top:450px;
+        height:400px;
+        overflow:auto;
+        width:350px;
+    }
+    .second-image{
+        width:250px;
+        height:250px;
+        border-radius: 60px;
+    }
+    .audio-block{
+        left:50px;
+        top:370px;
+    }
+    .movie-image{
+        position: absolute;
+        width:250px;
+            height:250px;
+        left:50px;
+        top:900px;
+        border-radius: 500px;
+    }
+    .movie-rotate-image{
+            animation:image-rotation;
+            animation-duration: 30s;
+            animation-timing-function: linear;
+            animation-iteration-count:infinite;
+            position: absolute;
+            left:50px;
+            top:850px;
+            width:250px;
+            height:250px;
+            border-radius: 50%;
+    
+    }
+    .artist-lyrics{
+        top:1150px;
+        width:550px;
+    }
+    .summary{
+        width:200px;
+    }
+    
+}

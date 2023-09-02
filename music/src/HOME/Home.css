@@ -1,0 +1,278 @@
+html{
+    height: 100%;
+}
+header{
+    height:10%;
+    width:100%;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    position: fixed;
+    top:0;
+}
+
+header nav{
+    font-size: 24px;
+    color: black;
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+nav a{
+    padding:0 20px 0 20px;
+    background-color: rgba(0, 255, 255, 0.649);
+    box-shadow: 0 0 10px cyan;
+    color: white;
+    text-decoration: none !important;
+    border-radius: 10px;
+}
+nav a:hover{
+    box-shadow: 0 0 5px cyan,0 0 25px cyan, 0 0 50px cyan,0 0 150px cyan, 0 0 300px cyan;
+}
+nav a:active{
+    color: black;
+}
+
+
+    
+.back-ground{
+    background-image:url('./home.jpg');
+    opacity: 0.7;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width:100%;
+    height:78%;
+    position:fixed;
+    top:10%;
+
+}
+
+.footer{
+    background-color: black;
+    display: flex;
+    text-align: center;
+    column-gap: 100px;
+    position:fixed;
+    top:87%;
+    height: 12%;
+    width:100%;
+    padding-top: 20px;
+    align-content: center;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+
+.audio{
+    width: 70%; /* Increased width for the audio player */
+    margin-right: 20px;
+    text-align: end;
+    /* background-color: #e2f1f8; Light teal background */
+    /* border: 2px solid #ffa69e;  */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .audio::-webkit-media-controls-panel {
+    background-color: #ffa69e; /* Coral background for control panel */
+    border-radius: 8px;
+  }
+  .audio::-webkit-media-controls-panel:hover{
+    background-color:rgb(46, 112, 124);
+  }
+
+
+  .audio::-webkit-media-controls-play-button {
+    background-color: #fff;
+    border-radius: 60%;
+    border: 2px solid #ffa69e;
+    width: 60px; 
+    height: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+ .audio::-webkit-media-controls-play-button:hover{
+    transform: scaleX(1.2);
+    background-color:rgb(48, 48, 139);
+  }
+
+  /* Style the pause button with custom icon and coral color */
+  .audio::-webkit-media-controls-pause-button::before {
+    font-family: 'Font Awesome 5 Free'; /* Specify Font Awesome icon font */
+    content: "\f04c"; /* Pause icon (Font Awesome code for pause) */
+    color: #10ad54; /* Coral color for pause icon */
+    font-size: 24px;
+  }
+
+  /* Style the stop button with custom icon */
+  .audio::-webkit-media-controls-stop-button::before {
+    font-family: 'Font Awesome 5 Free'; /* Specify Font Awesome icon font */
+    content: "\f04d"; /* Stop icon (Font Awesome code for stop) */
+    color: #b30e2a; /* Coral color for stop icon */
+    font-size: 24px;
+  }
+
+  /* Style the time remaining display */
+  .audio::-webkit-media-controls-time-remaining-display {
+    color: black;
+    font-size: 14px; /* Smaller font size for the time display */
+
+  }
+
+  
+  .heart-beat{
+    text-align: center;
+    padding-top: 0.5%;
+    animation: beat 1s infinite;
+  }
+  .heart{
+    text-align: center;
+    padding-top: 1%;
+  }
+  
+
+  @keyframes beat{
+
+    0%,40%,80%{
+        size:20;
+        color: white;
+        transform: scale(1.1);
+    }
+
+    20%,60%,100%{
+        size:50;
+        color: red;
+        transform: scale(1.5);
+    }
+}
+
+.songTitle{
+    margin-top: 0.3%;
+}
+
+
+
+
+.song-list-main{
+    padding-right: 30px;
+    position: absolute;
+    top:20%;
+    left:65%;
+    height: 400px;
+    width: 400px;
+    /* background-color: #ffa69e; */
+    border-radius: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 10px 10px 20px;
+
+}
+
+.song-list{
+    font-family: "Fredoka One", cursive;
+    cursor: pointer;
+    text-align: center;
+    list-style: none;
+    list-style-type: none;
+   
+
+}
+.song-list li{
+    font-size: 18px;
+    box-shadow: 0px 0px 10px;
+    text-align: center;
+    justify-content: center;
+}
+.song-list li:nth-child(3n+0){
+
+    background-color: #ca9721;
+    border-radius: 15px;
+    height:30px;
+    text-align: center;
+}
+.song-list li:nth-child(3n+1){
+
+    background-color:#f0e9ea;
+    border-radius: 15px;
+    height:30px;
+    text-align: center;
+}
+.song-list li:nth-child(3n+2){
+
+    background-color:rgb(36, 199, 96);
+    border-radius: 15px;
+    height:30px;
+    text-align: center;
+}
+.song-list-main::-webkit-scrollbar {
+    width: 0px;
+    padding: 0px;
+  }
+
+ 
+  .logo{
+    box-shadow: 10px 10px 20px;
+    width:100px;
+    height:30px;
+  }
+
+.brand-name{
+    position: absolute;
+    top:35%;
+    left:10%;
+    rotate: -55deg;
+    font-family: "Fredoka One", cursive;
+}
+
+.brand-name h1{
+    color: rgb(41, 15, 240);
+}
+.song-list li p{
+    padding-top: 5px;
+  }
+@media screen and (max-width:1000px){
+    header nav{
+        font-size: 15px;
+        color: black;
+        display: flex;
+        column-gap: 10px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    nav a{
+        padding:0 20px 0 20px;
+        background-color: rgba(0, 255, 255, 0.649);
+        box-shadow: 0 0 10px cyan;
+        color: white;
+        text-decoration: none !important;
+        border-radius: 10px;
+    }
+    .logo{
+        box-shadow: 10px 10px 20px;
+        width:80px;
+        height:20px;
+      }
+      .song-list li{
+        font-size: 15px;
+        text-align: center;
+
+      }
+      .brand-name{
+        position:absolute;
+        left:35px;
+        rotate:-70deg;
+        
+      }
+      .song-list-main{
+        position: absolute;
+        left:45%;
+      }
+
+}
