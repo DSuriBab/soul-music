@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3ec6945f.css",
+    "main.js": "/static/js/main.e32805df.js",
+    "static/js/787.5d86c2a1.chunk.js": "/static/js/787.5d86c2a1.chunk.js",
+    "static/media/mgb.png": "/static/media/mgb.8da08fa73f52a0cabf3d.png",
+    "static/media/home.jpg": "/static/media/home.1df9cb0b93e71a133193.jpg",
+    "static/media/soul-logo1.png": "/static/media/soul-logo1.801545a8ed32a04308ca.png",
+    "index.html": "/index.html",
+    "main.3ec6945f.css.map": "/static/css/main.3ec6945f.css.map",
+    "main.e32805df.js.map": "/static/js/main.e32805df.js.map",
+    "787.5d86c2a1.chunk.js.map": "/static/js/787.5d86c2a1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ec6945f.css",
+    "static/js/main.e32805df.js"
+  ]
+}
