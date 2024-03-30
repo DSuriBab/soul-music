@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import Home from './HOME/Home';
 import Album from './ALBUM/Album';
 import Artist from './ARTIST/Artist';
@@ -8,7 +8,6 @@ import Compare from './COMPARE/Compare';
 import { SongProvider } from './SongContext';
 function App() {
   return (
-    <Router>
         <SongProvider>
             <div>
             <Routes>
@@ -22,7 +21,6 @@ function App() {
         </SongProvider>
       
      
-    </Router>
   );
 }
 

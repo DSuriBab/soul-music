@@ -73,6 +73,11 @@ const Explore = () => {
   const handleInputChange = (e) => {
     setTitle(e.target.value);
   };
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      handleSearch(); 
+    }
+  };
 
   const currentSong = currentSongId ? songsData.Songs.find((song) => song.id === currentSongId) : null;
   setCurrentSong(currentSong)
@@ -88,6 +93,7 @@ const Explore = () => {
           value={title}
           placeholder="Enter song title"
           onChange={handleInputChange}
+          onKeyPress={handleKeyPress}
         />
         <button className='search-input' onClick={handleSearch}>Search <FcMusic /></button>
       </div>

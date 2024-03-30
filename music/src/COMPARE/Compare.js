@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ReactMic } from 'react-mic';
 import SData from '../songs.json'
+import {AiFillHome} from 'react-icons/ai'
+import { NavLink   } from 'react-router-dom';
 import stringSimilarity from 'string-similarity';
 import './compare.css'
 const DisplayInput = ({ recordedBlob, text, songTitle }) => {
@@ -153,6 +155,7 @@ const SpeechInputAndDisplay = () => {
     <div className='speech-input'>
       <div>
         <h2 className='about-text'>Let's Compare your lyrics here....</h2>
+        <NavLink to='/' className='home'><AiFillHome size='35'/> Home</NavLink>
         <div className="stroke">
           <ReactMic mimeType="audio/mp3"record={isRecording} strokeColor={'#2c339c'} backgroundColor={'#6d6d62'}className="sound-wave" onStop={onStop} onData={onData}/>
         </div>
@@ -193,4 +196,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default App;
